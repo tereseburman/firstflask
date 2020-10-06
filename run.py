@@ -7,6 +7,14 @@ app = Flask (__name__)# instance of this and storing in variable called app
 def index():
     return render_template("index.html")
 
+@app.route("/about")
+def about():
+    return render_template("about.html")    
+
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")    
+
 if __name__ == "__main__": # main is default name in python
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
