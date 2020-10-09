@@ -1,9 +1,9 @@
 import os
-from flask import Flask, render_template #import Flask class
+from flask import Flask, render_template
 
-app = Flask (__name__)# instance of this and storing in variable called app
-#single module build in varible
-@app.route("/") # @ is an decorator- way of wrapping functions. / root of
+app = Flask(__name__)
+
+@app.route("/")
 def index():
     return render_template("index.html")
 
@@ -11,15 +11,16 @@ def index():
 def about():
     return render_template("about.html")    
 
-@app.route("/contact")
+@app.route ("/contact")
 def contact():
     return render_template("contact.html")    
 
 @app.route("/careers")
-def careers():
-    return render_template("careers.html")        
+def careers ():
+     return render_template("careers.html")
 
-if __name__ == "__main__": # main is default name in python
+
+if __name__ == "__main__": 
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
             debug=True)
