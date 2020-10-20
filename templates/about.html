@@ -1,10 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 
-
-    {% for number in list_of_numbers %}                 
-        <p>{{ number }}</p>
-    {% endfor %}
+{{ company[1]["name"] }}
 
 <h2>{{ page_title }}</h2>
 <p>The formation of the group grew out of a meeting Gandalf had with Thorin in Bree which kindled Thorin's interest in
@@ -37,11 +34,11 @@
 			<img src="https://static.wikia.nocookie.net/lotr/images/b/b4/The-Hobbit-Fili-and-Kili.jpg/revision/latest/scale-to-width-down/550?cb=20110714202952">
     </div>
 			<div class="col-md-7">
-				<h3>Fili and Killi</h3>
+				<h3>Fili and Kili</h3>
 				<p>
-					Fíli and Kíli were nephews of Thorin, who was the elder brother of their mother Dís. They were also
-					nephews of Frerin, grandsons of Thráin II, and great-grandsons of Thrór. Fíli's most distinguishing
-					feature was his long nose, the longest of any of the Dwarves in Thorin's company.</p>
+				Fíli and Kíli were nephews of Thorin, who was the elder brother of their mother Dís. They were also
+				nephews of Frerin, grandsons of Thráin II, and great-grandsons of Thrór. Fíli's most distinguishing
+				feature was his long nose, the longest of any of the Dwarves in Thorin's company. </p>
 			</div>
 		</div>
 		<div class=" row featurette">
@@ -62,7 +59,7 @@
 			<div class="row featurette">
 				<div class="col-md-5">
 					<img src="https://static.wikia.nocookie.net/lotr/images/f/fc/Gloin_2.jpg/revision/latest/scale-to-width-down/629?cb=20120908171710">
-        </div>
+                </div>
 					<div class=" col-md-7">
 						<h3>Gloin</h3>
 						<p>Glóin was born in TA 2783, after Erebor, after the Dragon Smaug desolated Erebor. He was the
@@ -98,7 +95,7 @@
 					<div class="row featurette">
 						<div class="col-md-5">
 							<img src="https://static.wikia.nocookie.net/lotr/images/e/e7/The-Hobbit-Dwalin-In-Pantry.jpg/revision/latest/scale-to-width-down/679?cb=20121030123722">
-        </div>
+                        </div>
 							<div class=" col-md-7">
 								<h3>Dwalin</h3>
 								<p>Born in TA 2772, two years after the dragon Smaug had desolated Erebor, Dwalin was
@@ -177,5 +174,5 @@
 						<img src="https://static.wikia.nocookie.net/lotr/images/e/e7/Gandalf_the_Grey.jpg/revision/latest/scale-to-width-down/952?cb=20121110131754">
                     </div>
 					</div>                  
-					</div>
-					{% endblock %}
+					
+{% endblock %}					
